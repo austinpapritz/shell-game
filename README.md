@@ -1,8 +1,8 @@
 ## Shell Game README
 
 Code Quality / Grading Requirements
-[] Open PR from dev to main with your changes
-[] Preview deploy from Netlify showing on your PR
+[X] Open PR from dev to main with your changes
+[X] Preview deploy from Netlify showing on your PR
 [] Clear commit history
 [] Good naming conventions and code is easy to read
 [] Effective use of CSS and semantic HTML
@@ -14,3 +14,21 @@ Code Requirements
 [] On click, see the ball revealed, clearing out the previous correct guess style
 [] displayResults function for displaying the updated state
 [] reset function for resetting the styles that display the correct location
+
+HTML
+
+3 Shell containers
+3 <img>
+3 pearls
+x3 <button></button>
+Scoreboard: total, wins, losses
+
+States
+let guessTotal guessWin
+
+Events
+button click
+randomly choose location
+classList.add pearl at chosen location / transform Shell -100px
+Scoreboard update: total, wins, losses
+Reset
