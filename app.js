@@ -41,30 +41,37 @@ btnR.addEventListener('click', () => {
     handleGuess(answer, 'r');
 });
 
-/* Display Functions */
+/* Guess-Reward Mechanism  */
 function handleGuess(correctSpot, userGuess) {
     resetBoard();
-    totalGuesses++;
-    console.log('working handleGuess');
+
+    // transformShell();
     const correctShell = document.getElementById(`shell-${correctSpot}`);
-    console.log(correctShell);
+    correctShell.classList.add('transform');
+
+    // revealPearl();
+    const correctPearl = document.getElementById(`pearl-${correctSpot}`);
+    correctPearl.classList.remove('hide');
+
+    // updateScoreboard();
+    totalGuesses++;
     if (userGuess === correctSpot) {
         correctGuesses++;
     }
-    updateScoreboard();
-    correctShell.classList.add('transform');
-}
 
-//Update Scoreboard
-function updateScoreboard() {
     winsSpan.textContent = correctGuesses;
     totalSpan.textContent = totalGuesses;
     lossesSpan.textContent = totalGuesses - correctGuesses;
 }
 
+//Reset scoreboard
 function resetBoard() {
     shellL.classList.remove('transform');
     shellM.classList.remove('transform');
     shellR.classList.remove('transform');
+    pearlL.classList.add('hide');
+    pearlM.classList.add('hide');
+    pearlR.classList.add('hide');
 }
+
 // (don't forget to call any display functions you want to run on page load!)
