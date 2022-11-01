@@ -26,14 +26,16 @@ HTML
 States
 [X] let guessTotal guessWin
 
-[] Events
-[] button click
-[] randomly choose location
+Events
+[x] button click
+[x] randomly choose location
 [] classList.add pearl at chosen location / transform Shell -100px
 [] Scoreboard update: total, wins, losses
-[] Reset
 
 handleGuess
+[] Increment totalGuesses
+[] Match guess to answer using ${}
+[] Update scoreboard if win/loss
 [] Move up picture
 [] Reveal pearl
-[]
+[]Reset
