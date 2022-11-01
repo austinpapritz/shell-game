@@ -17,18 +17,18 @@ Code Requirements
 
 HTML
 
-3 Shell containers
-3 <img>
-3 pearls
-x3 <button></button>
-Scoreboard: total, wins, losses
+[x] 3 Shell containers
+[x] 3 <img>
+[x] 3 pearls
+[x] x3 <button></button>
+[x] Scoreboard: total, wins, losses
 
 States
-let guessTotal guessWin
+[X] let guessTotal guessWin
 
-Events
-button click
-randomly choose location
-classList.add pearl at chosen location / transform Shell -100px
-Scoreboard update: total, wins, losses
-Reset
+[] Events
+[] button click
+[] randomly choose location
+[] classList.add pearl at chosen location / transform Shell -100px
+[] Scoreboard update: total, wins, losses
+[] Reset
