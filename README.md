@@ -32,3 +32,8 @@ States
 [] classList.add pearl at chosen location / transform Shell -100px
 [] Scoreboard update: total, wins, losses
 [] Reset
+
+handleGuess
+[] Move up picture
+[] Reveal pearl
+[]
