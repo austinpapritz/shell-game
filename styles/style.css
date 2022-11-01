@@ -1,0 +1,15 @@
+.hide {
+    display: none;
+}
+
+.shell {
+    width: 400px;
+}
+
+.pearl {
+    width: 150px;
+}
+
+.transform {
+    transform: translateY(-125px);
+}
