@@ -32,24 +32,28 @@
                 </h2>
                 <div class="hiding-places">
                     <div class="l-container">
-                        <img src="https://placekitten.com/200/200" />
+                        <img id="img-1" src="https://placekitten.com/200/200" />
+                        <div class="pearl"></div>
                         <button id="btn-1">PICK 1</button>
                     </div>
 
                     <div class="m-container">
-                        <img src="https://placekitten.com/200/200" />
+                        <img id="img-2" src="https://placekitten.com/200/200" />
+                        <div class="pearl"></div>
                         <button id="btn-2">PICK 2</button>
                     </div>
 
                     <div class="r-container">
-                        <img src="https://placekitten.com/200/200" />
+                        <img id="img-3" src="https://placekitten.com/200/200" />
+                        <div class="pearl"></div>
                         <button id="btn-3">PICK 3</button>
                     </div>
                 </div>
-                <div>You guessed correctly <span id="wins-elem">0</span> times</div>
-                <div>and incorrectly <span id="losses-elem">0</span> times</div>
-                <div>out of</div>
-                <div> <span id="total-elem">0</span> games.</div>
+                <section class="scoreboard">
+                    <div class="stat">Wins: <span id="wins-elem">0</span></div>
+                    <div class="stat">Losses: <span id="losses-elem">0</span></div>
+                    <div class="stat">Total guesses: <span id="total-elem">0</span></div>
+                </section>
             </section>
         </main>
     </body>
