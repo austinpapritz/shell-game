@@ -1,3 +1,17 @@
 .hide {
     display: none;
 }
+
+.shell {
+    width: 400px;
+}
+
+.pearl {
+    width: 150px;
+}
+
+button {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+}
