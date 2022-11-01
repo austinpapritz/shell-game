@@ -3,9 +3,13 @@ const btnL = document.getElementById('btn-l');
 const btnM = document.getElementById('btn-m');
 const btnR = document.getElementById('btn-r');
 
-const containerL = document.getElementById('l-container');
-const containerM = document.getElementById('m-container');
-const containerR = document.getElementById('r-container');
+const shellL = document.getElementById('shell-l');
+const shellM = document.getElementById('shell-m');
+const shellR = document.getElementById('shell-r');
+
+const pearlL = document.getElementById('pearl-l');
+const pearlM = document.getElementById('pearl-m');
+const pearlR = document.getElementById('pearl-r');
 
 const winsSpan = document.getElementById('wins-elem');
 const totalSpan = document.getElementById('total-elem');
@@ -39,14 +43,16 @@ btnR.addEventListener('click', () => {
 
 /* Display Functions */
 function handleGuess(correctSpot, userGuess) {
+    resetBoard();
     totalGuesses++;
     console.log('working handleGuess');
-    // const correctHidingPlace = document.getElementById(`${correctSpot}-container`);
-    // correctHidingPlace.classList.toggle('pearl');
+    const correctShell = document.getElementById(`shell-${correctSpot}`);
+    console.log(correctShell);
     if (userGuess === correctSpot) {
         correctGuesses++;
     }
     updateScoreboard();
+    correctShell.classList.add('transform');
 }
 
 //Update Scoreboard
@@ -54,5 +60,11 @@ function updateScoreboard() {
     winsSpan.textContent = correctGuesses;
     totalSpan.textContent = totalGuesses;
     lossesSpan.textContent = totalGuesses - correctGuesses;
+}
+
+function resetBoard() {
+    shellL.classList.remove('transform');
+    shellM.classList.remove('transform');
+    shellR.classList.remove('transform');
 }
 // (don't forget to call any display functions you want to run on page load!)
