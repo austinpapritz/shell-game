@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Shell Game</title>
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+            <h1>Shell Game</h1>
+        </header>
 
-</head>
+        <main>
+            <section class="alpha-section">
+                <h2>
+                    Which shell is the pearl in?
+                </h2>
+                <div class="hiding-places">
+                    <div class="l-container">
+                        <img src="https://placekitten.com/200/200" />
+                        <button id="btn-1">PICK 1</button>
+                    </div>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
+                    <div class="m-container">
+                        <img src="https://placekitten.com/200/200" />
+                        <button id="btn-2">PICK 2</button>
+                    </div>
 
-    <main>
-
-    </main>
-
-</body>
-
+                    <div class="r-container">
+                        <img src="https://placekitten.com/200/200" />
+                        <button id="btn-3">PICK 3</button>
+                    </div>
+                </div>
+                <div>You guessed correctly <span id="wins-elem">0</span> times</div>
+                <div>and incorrectly <span id="losses-elem">0</span> times</div>
+                <div>out of</div>
+                <div> <span id="total-elem">0</span> games.</div>
+            </section>
+        </main>
+    </body>
 </html>
